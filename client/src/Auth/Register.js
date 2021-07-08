@@ -1,6 +1,5 @@
 import { useState } from "react";
 import RegisterForm from "../Components/RegisterForm";
-import axios from "axios";
 import { toast } from "react-toastify";
 import { register } from "../actions/auth";
 
@@ -12,7 +11,7 @@ const Register = ({ history }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await register({
+      let res = await register({
         name,
         email,
         password,

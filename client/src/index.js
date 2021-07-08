@@ -12,13 +12,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './Reducers/Index';
 
 
-
-
-
-
 /// creating redux store
 const store = createStore(rootReducer, composeWithDevTools());
-
 
 
 ReactDOM.render(
